@@ -5,6 +5,8 @@ import Link from "next/link";
 import type { BookingDetails } from "@/lib/api-client";
 import { fetchBookingDetails } from "@/lib/api-client";
 
+const isStaticDemo = process.env.NEXT_PUBLIC_STATIC_DEMO === "1";
+
 const timeWindowLabels: Record<string, string> = {
   morning: "Morning",
   afternoon: "Afternoon",
